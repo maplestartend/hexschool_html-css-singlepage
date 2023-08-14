@@ -16,17 +16,26 @@ html {
   transition: 0.5s;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .header_club {
   background-color: #f6f6f8;
   padding: 0.5rem;
 }
 
 .header_club-container {
-  width: 70%;
-  margin: 0 auto;
+  width: 95%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.header_club-container img {
+  vertical-align: top;
+  padding-right: 2px;
 }
 
 .header_club a {
@@ -39,11 +48,6 @@ html {
   border-right: 1px solid #cccccc;
 }
 
-.header_fb img {
-  vertical-align: top;
-  padding-right: 2px;
-}
-
 .header_fb a:link,
 .header_fb a:visited {
   color: #4267b2;
@@ -51,11 +55,6 @@ html {
 
 .header_fb a:hover {
   border-bottom: 1px solid #4267b2;
-}
-
-.header_twitter img {
-  vertical-align: top;
-  padding-right: 2px;
 }
 
 .header_twitter a:link,
@@ -73,8 +72,6 @@ html {
 }
 
 .header_main-container {
-  width: 70%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,13 +112,7 @@ html {
   border-bottom: 4px solid #69f0ae;
 }
 
-.main_container {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .banner {
-  width: 100%;
   height: 500px;
   display: flex;
   align-items: center;
@@ -137,7 +128,7 @@ html {
 }
 
 .banner_title {
-  margin-left: 350px;
+  margin-left: 250px;
   color: #fff;
   font-size: 36px;
   font-weight: bold;
@@ -191,7 +182,7 @@ html {
 }
 
 .table {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -229,7 +220,6 @@ html {
 }
 
 .info {
-  width: 100%;
   padding: 30px;
   background: linear-gradient(180deg, #e4fff8 0%, #a2ddce 100%);
 }
@@ -246,16 +236,24 @@ html {
 }
 
 .form {
-  width: 50%;
-  margin: 0 auto;
   padding-bottom: 40px;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .form_left {
   width: 45%;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form_info {
+  width: 70%;
+}
+
+.form_info input {
+  width: 100%;
 }
 
 .form_right {
@@ -272,7 +270,6 @@ html {
 }
 
 .form input {
-  width: 80%;
   padding: 10px 10px;
   border: 1px solid #aaa;
   border-radius: 3px;
@@ -280,7 +277,7 @@ html {
 
 .form_comments {
   resize: none;
-  width: 80%;
+  width: 70%;
   border: 1px solid #aaa;
   border-radius: 3px;
 }
@@ -301,6 +298,7 @@ html {
   font-weight: 400;
   letter-spacing: 3px;
   text-align: center;
+  cursor: pointer;
 
   display: block;
   margin: 0 auto;
@@ -316,14 +314,23 @@ html {
 .page_footer {
   background-color: #fff;
   padding: 2rem;
-  width: 70%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.footer_img {
+.footer_logo {
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
+  width: 171px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
   margin: auto 0;
+}
+
+.footer_logo a {
+  display: block;
+  height: 50px;
 }
 
 .footer_listitem {
