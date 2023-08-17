@@ -385,7 +385,8 @@ html {
   }
 
   .header_nav {
-    width: 40%;
+    width: 80%;
+    margin: 20px 20px 0 20px;
     flex-wrap: wrap;
   }
 
@@ -399,12 +400,21 @@ html {
     display: inline-block;
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .header_nav-item a:hover,
   .header_nav-item a:active {
     border-bottom: none;
+  }
+
+  .header_club-container {
+    width: 100%;
+  }
+
+  .header_main-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .banner {
@@ -502,27 +512,6 @@ html {
 }
 
 @media screen and (max-width: 500px) {
-  .header_club-container {
-    width: 100%;
-  }
-
-  .header_main-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header_nav {
-    width: 80%;
-    margin: 20px 20px 0 20px;
-  }
-
-  .header_nav-item a {
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-  }
-
   .toolcard_title {
     font-size: 20px;
   }
