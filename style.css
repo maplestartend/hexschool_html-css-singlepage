@@ -347,7 +347,8 @@ html {
   letter-spacing: 1px;
 }
 
-.footer_word:hover {
+.footer_word:hover,
+.footer_word:active {
   border-bottom: 1px solid #00cc99;
 }
 
@@ -379,14 +380,6 @@ html {
     padding: 1rem;
   }
 
-  .header_fb a:hover {
-    border-bottom: none;
-  }
-
-  .header_twitter a:hover {
-    border-bottom: none;
-  }
-
   .header_nav {
     width: 80%;
     margin: 20px 20px 0 20px;
@@ -407,11 +400,9 @@ html {
     font-size: 20px;
   }
 
-  .header_nav-item a:hover {
-    border-bottom: none;
-  }
-
+  .header_nav-item a:hover,
   .header_nav-item a:active {
+    border-bottom: none;
     background-color: #00251a;
     color: #fff;
   }
