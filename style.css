@@ -27,7 +27,6 @@ html {
 }
 
 .header_club-container {
-  width: 95%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -486,14 +485,18 @@ html {
 
   .form_left {
     width: 100%;
-    align-items: center;
+    align-items: stretch;
   }
 
   .form_right {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+  }
+
+  .form_info {
+    width: auto;
   }
 
   .form_button {
